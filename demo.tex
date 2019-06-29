@@ -4,15 +4,29 @@
 \documentclass{beamer}
 \usetheme{focus}
 
-\title{Focus: \\ A Minimalist Beamer Theme}
+%%%% Configuracion plantilla para ULL
+% Colores ULL
+\definecolor{main}{RGB}{87, 6, 140}
+\definecolor{background}{RGB}{255, 255, 255}
+\usepackage{fontspec}
+\setmainfont{Montserrat}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{graphicx}
+
+
+\title{Plantilla presentaciones}
 \subtitle{Subtitle}
 \author{Author 1\texorpdfstring{\\}{,} Author 2}
-\titlegraphic{\includegraphics[scale=1.25]{focuslogo.pdf}}
-\institute{Institute Name \\ Institute Address}
+\institute{Universidad de La Laguna}
 \date{dd mm yyyy}
 
 \begin{document}
+
     \begin{frame}
+        \begin{textblock*}{5cm}(7.5cm,0.2cm) % {block width} (coords)
+            \includegraphics[width=5cm]{images/marca-universidad-de-la-laguna-positivo.png}
+        \end{textblock*}
+        \vspace*{0.2cm}
         \maketitle
     \end{frame}
     
